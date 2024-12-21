@@ -24,8 +24,6 @@ for i in range(1, 11):
 cursor.execute("UPDATE Users SET balance = 500 WHERE id % 2 > 0")
 
 cursor.execute("SELECT COUNT(*) FROM Users")
-# for i in range(0, cursor.fetchall()[0][0] - 1, 3):
-#     cursor.execute("DELETE FROM Users WHERE id = ?", f"{i + 1}")
 
 i = 1
 c = cursor.fetchall()[0][0]
